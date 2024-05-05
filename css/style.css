@@ -1,0 +1,269 @@
+@font-face {
+    font-family: Rancho;
+    src: url(../fonts/Rancho/Rancho-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 200;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-red: #770000;
+    --color-red-svetl: #830000;
+    --color-red-nav: #ee0000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav.menu{
+    display: none;
+    background-color: var(--color-red-svetl);
+    height: 100%;
+    width: 100%;
+    padding: 10px 3vw;
+    
+}
+  
+nav.menu a{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+    margin-left: 80%;
+    position: absolute;
+    text-align: end;
+}
+
+nav.menu li{
+    color: var(--color-red);
+}
+
+nav.menu.visible {
+    display: block;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    align-items: center;
+    padding: 10px 3vw;
+    background-color: var(--color-red);
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+}
+
+header div.logo span{
+    font-size: 35px;
+    color: var(--color-red-nav);
+    font-family: Rancho;
+}
+
+.logo img {
+    margin-right: 5px;
+    height: 45px;
+}
+
+.poisc input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 400px;
+    height: 40px;
+    justify-self: end;
+    border-radius: 10px;
+}
+
+
+.vhot a{
+    padding: 10px 3vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 40px;
+    font-family: Inter;
+}
+
+.user img{
+    padding: 10px 3vw;
+    height: 75px;
+}
+
+main section.shilm {
+    display: grid;
+    grid-template-columns: 1fr 10px 2fr;
+    background-color: var(--color-red-svetl);
+    padding: 20px 3vw;
+}
+
+main section.photo article {
+    align-items: end;
+}
+
+main div.glav img{
+    height: 30px;
+}
+main section.shilm span{
+    font-size: 24px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.photo img {
+    width: 30%;
+    height: 40%;
+}
+
+main section.shilm hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0px solid;
+    margin: 1em 0;
+    border-left: 1px solid var(--color-white);
+    height: 1000px;
+}
+
+main section.novos hr{
+    width: 100%;
+}
+
+main section.novost{
+    background-color: var(--color-red-svetl);
+    padding: 20px 3vw;
+}
+
+main section.novost div.kino img{
+    width: 17px;
+    height: 28px;
+}
+
+main section.novost div span{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main div.conte {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+  
+main article.cont div.img{
+    background-color: rgba(255, 255, 255, 0.233);
+    width: 150px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+main article.cont img{
+    width: 60px;
+    height: 80px;
+}
+
+main article.cont div.data{
+    background-color: rgba(255, 255, 255, 0.233);
+    width: 150px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main article.cont p{
+    font-size: 15px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main article.cont h1{
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.conez{
+    display: grid;
+    grid-template-columns: 4fr  1fr;
+    background-color: var(--color-red);
+    padding: 30px 3vw;
+}
+
+main div.ohor span{
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section div.cnop a{
+    padding: 30px 4vw;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 15px;
+    font-family: Inter;
+    font-size: 20px;  
+}
+
+main section.cart{
+    flex: 1;
+    padding: 10px;
+    flex-direction: column;
+}
+
+main section.cart img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+main section.carta{
+    background-color: var(--color-red);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 3vw;
+}
+
+main section.carta div.set{
+    padding: 20px 40vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main section.carta ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+main section.carta ul span{
+    font-size: 20px;
+    font-family: Inter;
+    color: var(--color-white);
+}
+
+main section.carta div.pril{
+    padding: 0 33vw;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 390px){
+    header>div{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
